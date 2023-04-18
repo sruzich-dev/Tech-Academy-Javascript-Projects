@@ -221,5 +221,5 @@ function resetGame() {
         square.style.backgroundImage = '';
     }
     // This resets our array so it is empty and we can start over.
-    selecetedSquares = [];
+    selectedSquares = [];
 }

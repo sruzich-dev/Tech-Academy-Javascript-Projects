@@ -40,7 +40,7 @@ function placeXOrO(squareNumber) {
             // This function diables clicking for computers turn.
             disableClick();
             // This function waits 1 second before the computer places an image and enables click.
-            setTimout(function() { computersTurn(); }, 1000);
+            setTimeout(function() { computersTurn(); }, 1000);
         }
         // Returning true is needed for our computersTurn() function to work.
         return true;
@@ -210,4 +210,16 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     animateLineDrawing();
     // This line waits 1 second. Then, clears canvas, resets game, and allows clicking again.
     setTimeout(function () { clear(); resetGame(); }, 1000);
+}
+
+// This function resets the game in the event of a tie or a win.
+function resetGame() {
+    // This for loop iterates through each HTML square element.
+    for (let i = 0; i < 9; i ++) {
+        let square = document.getElementById(String(i));
+        // This removes our elements backgroundImage.
+        square.style.backgroundImage = '';
+    }
+    // This resets our array so it is empty and we can start over.
+    selecetedSquares = [];
 }

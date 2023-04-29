@@ -35,13 +35,19 @@ div {
     float: right;
 }
 
-.left {
+.menu-left {
     width: 200px;
     height: 200px;
     float: left;
 }
 
-.right {
+.menu-center {
+	width:200px;
+	height:200px;
+	float:left;
+}
+
+.menu-right {
     width: 200px;
     height: 200px;
     float: right;

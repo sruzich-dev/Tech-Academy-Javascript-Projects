@@ -21,16 +21,17 @@ function getReceipt() {
         sizeTotal = 10;
     } else if (selectedSize === "Large Pizza") {
         sizeTotal = 14;
-    } else if (slectedSize === "Extra Large Pizza") {
+    } else if (selectedSize === "Extra Large Pizza") {
         sizeTotal = 16;
     }
-    runningTotal = 16;
+    runningTotal = sizeTotal;
     console.log(selectedSize+" = $"+sizeTotal+".00");
     console.log("size text1: "+text1);
     console.log("subtotal: $"+runningTotal+".00");
-    // These variables will get passed on to each funtion
     getTopping(runningTotal,text1);
+    // All three of these variables will get passed on to each funtion
 };
+
 function getTopping(runningTotal,text1) {
     var toppingTotal = 0;
     var selectedTopping = [];

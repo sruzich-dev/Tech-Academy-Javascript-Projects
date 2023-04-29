@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="CSS/one_page.css">
+  <script defer src="JS/main.js"></script>
+</head>
+
+<body>
+  <!--iframe-->
+  <iframe id="vid" width="560" height="315" src="https://www.youtube.com/embed/8sX9IEHWRJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <!--Navigation bar-->
+  <div class="topnav">
+    <a href="#home" class="nav">Home</a>
+    <a href="#about" class="nav">About</a>
+    <a href="#contact" class="nav">Contact</a>
+  </div>
+  <!--End Navigation bar -->
+  
+  <!--Header-->
+  <div id="sellverse">
+  <h1>Sellverse</h1>
+  </div>
+
+  <!--image gallery-->
+  <div class="row">
+      <div class="column">
+        <h3><span>I-Phone</h3>
+          <img src="Images/iphone5.png" alt="Iphone" width="220px" height="220px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <h3>Macbook</h3>
+        <img src="Images/macbook5.png" alt="Macbook Laptop" width="220px" height="220px" onclick="openModal();currentSlide(2)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <h3>I-Mac</h3>
+        <img src="Images/imac5.png" alt="Imac Desktop Computer" onclick="openModal();currentSlide(3)" class="hover-shadow" width="220px" height="220px">
+      </div>
+      <div>
+        <h3>Airpods</h3>
+        <img src="Images/airpods.png" alt="Airpods Headphones" onclick="openModal();currentSlide(4)" class="hover-shadow" width="220px" height="220px">
+      </div>
+  </div>
+      <!--About Section-->
+      <div id="about">
+        <h2>About</h2>
+        <p>Sellverse&copy; pays top dollar for Apple products: <br>
+          <br>I-Phone <br>MacBook Laptops <br>I-Mac Computers <br>I-Pads <br>
+          <br> Trust in our 10+ years experience, thousands of satisfied customers & the convenience of same day cash to sell & recycle Apple devices.
+        </p>
+      </div>
+      <!--End About Section-->
+      <!--Contact Form-->
+      <section id="contact">
+        <div class="form">
+          <div>
+            <h4>Contact us!</h4>
+            <p>Please provide us with your basic contact information</p>
+            <div id="input">
+                <input class="form" type="text" value="First Name">
+                <input class="form" type="text" value="Last Name">
+                <input class="form" type="text" value="Email Address">
+                <input class="form" type="text" value="Device Name">
+                <div class="form-spacer">
+                  <label class="terms">Terms and Conditions</label>
+                </div>
+                <div>
+                  <input type="submit" value="Submit">
+                </div>
+                <!--Footer-->
+                <div>
+                  <p id="footer">Sellverse.com&copy; 2023</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- END form -->
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+     <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="Images/iphone5.png" alt="IPhone" width="800px" height="800px">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="Images/macbook5.png" alt="Macbook Laptop" width="800px" height="800px">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="Images/imac5.png" alt="IMac Desktop Computer" width="800px" height="800px">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="Images/airpods.png" alt="Airpods Headphones" width="800px" height="800px">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="Images/iphone5.png" width="200px" height="200px" onclick="currentSlide(1)" alt="Iphone 5">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="Images/macbook5.png" width="200px" height="200px" onclick="currentSlide(2)" alt="Macbook Laptop">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="Images/imac5.png" width="200px" height="200px" onclick="currentSlide(3)" alt="Imac Desktop Computer">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="Images/airpods.png" width="200px" height="200px" onclick="currentSlide(3)" alt="Airpods Headphones">
+    </div>
+
+</body>
+
+</html>

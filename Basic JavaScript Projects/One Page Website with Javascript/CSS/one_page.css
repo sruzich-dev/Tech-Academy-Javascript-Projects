@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-align:center;
+}
+
+img {
+    border-radius: 15px;
+}
+
+.topnav {
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+    justify-content: space-evenly;
+    background: whitesmoke;
+}
+
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+ .topnav a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+ .row > .column {
+    padding: 0 8px;
+}
+  
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+  
+/* Create four equal columns that floats next to eachother */
+.column {
+float: left;
+width: 25%;
+padding: 0 12px;
+width: 
+}
+  
+/* The Modal (background) */
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+padding-top: 100px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: gray;
+}
+  
+/* Modal Content */
+.modal-content {
+position: relative;
+background-color: #fefefe;
+border-radius: 15px;
+margin: auto;
+padding: 0;
+width: 90%;
+max-width: 1200px;
+}
+  
+/* The Close Button */
+.close {
+color: white;
+position: absolute;
+top: 10px;
+right: 25px;
+font-size: 35px;
+font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+color: #999;
+text-decoration: none;
+cursor: pointer;
+}
+  
+/* Hide the slides by default */
+.mySlides {
+display: none;
+}
+  
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: grey;
+font-weight: bold;
+font-size: 20px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+.prev {
+left: 0;
+border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+  
+/* Number text (1/3 etc) */
+.numbertext {
+color: black;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+  
+/* Caption text */
+.caption-container {
+text-align: center;
+background-color: whitesmoke;
+padding: 10px 16px;
+color: black;
+}
+  
+img.demo {
+opacity: 0.6;
+justify-content: center;
+}
+  
+.active,
+.demo:hover {
+opacity: 1;
+}
+  
+img.hover-shadow {
+transition: 0.3s;
+}
+  
+.hover-shadow:hover {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+width: 240px;
+height: 240px;
+}
+
+
+h1 {
+width: 100%;
+height: 150px;
+}
+
+
+#sellverse{
+text-shadow: #666 0.5px 0 3px;
+font-size: 45px;
+color: white;
+background-color: whitesmoke;
+}
+
+/* h3 About text + product name */
+h3 {
+align-items: center;
+color: white;
+text-shadow: black 1px 0 5px;
+font-size: 25px;
+padding-top: 30px;
+padding-bottom: 50px;
+opacity: 0.5;
+}
+
+/* h2 About title */
+h2 {
+color: white;
+text-shadow: black 1px 0 10px;
+font-size: 35px;
+}
+
+/* h4 Form*/
+h4 {
+color: white;
+text-shadow: black 1px 0 10px;
+font-size: 20px;
+}
+
+#about {
+background: whitesmoke;
+color: black;
+opacity: 0.5;
+border-radius: 25px;
+display: inline-block;
+width: 1200px;
+height: 220px;
+padding-top: 10px;
+margin-bottom: 20px;
+}
+
+#about:hover {
+opacity: 0.60;
+width: 100%;
+transition: width 1s;
+transition: 1s, opacity 1s;
+ 
+}
+
+#vid {
+width: 100%;
+height: 400px;
+}
+
+p {
+margin-top: 12px;
+}
+
+#contact {
+color: #666;
+opacity: 0.8;
+border-radius: 30px;
+width: 100%;
+position: bottom;
+bottom: 0px; 
+background-color: whitesmoke;
+padding-top: 20px;
+}
+
+#input {
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+#contact:hover {
+opacity: 1;
+vertical-align: baseline;
+}
+
+#footer { 
+color: #666;
+opacity: 0.5;
+width: 100%;
+font-size: x-small;
+padding-top: 30px;
+}
